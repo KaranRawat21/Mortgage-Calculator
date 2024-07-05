@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+body{
+  background-color: gray;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:Plus Jakarta Sans;
+}
+main{
+  background-color: #ffffff;
+  width: 700px;
+  height: 450px;
+  border-radius: 15px;
+  display: flex;
+}
+.calculator-container{
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading h2{
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.heading a{
+  font-size: .8rem;
+  color: #7a898f;
+  font-weight: 700;
+}
+.heading a:hover{
+  color: black;
+}
+.amout-container{
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.amout-container h3{
+  font-size: .7rem;
+  color: #7a898f;
+}
+.amount-input-container{
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.amount-input-container:hover{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.amount-input-container h2{
+  font-size: .8rem;
+  border: 1px solid #7a898f;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  background-color: #e2f3fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #566e7a;
+}
+.amout-input{
+  width: 100%;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  outline: none;
+  border: 1px solid #7a898f;
+  padding: 5px;
+  font-size: .8rem;
+}
+
+.term-and-rate-container{
+  display: flex;
+  gap: 5%;
+}
+.term-and-rate-container h3{
+  font-size: .7rem;
+  color: #7a898f;
+}
+.term-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.year-input-container{
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.year-input{
+  width: 100%;
+  height: 30px;
+  border: 1px solid #566e7a;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  border-right: none;
+  padding: 5px;
+  font-size: .8rem;
+}
+.year-input-container h2{
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
+  background-color: #e2f3fb;
+  border-radius: 0 5px 5px 0;
+  border-right: none;
+  border: 1px solid #7a898f;
+  color: #566e7a;
+}
+.year-input-container:hover{
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.rate-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.percent-input{
+  width: 100%;
+  height: 30px;
+  border: 1px solid #566e7a;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  border-right: none;
+  padding: 5px;
+  font-size: .8rem;
+}
+.percent-input-container h2{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .8rem;
+  background-color: #e2f3fb;
+  border-radius: 0 5px 5px 0;
+  border-right: none;
+  border: 1px solid #7a898f;
+  color: #566e7a;
+}
+.percent-input-container{
+  display: flex;
+    border: 1px solid transparent;
+    border-radius: 5px;
+  
+}
+.percent-input-container:hover{
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.mortgage-type-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mortgage-type-container h3{
+  font-size: .7rem;
+  color: #7a898f;
+}
+.repayment-container,  .Interest-only-container{
+  width: 100%;
+  height: 30px;
+  border: 1px solid #566e7a;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.repayment-container h1,  .Interest-only-container h1{
+  font-size: .8rem;
+}
+.repayment-container input, .Interest-only-container input{
+  accent-color: red;
+  width: 15px;
+  height: 15px;
+}
+
+.Interest-only-container input{
+  accent-color: red;
+  width: 15px;
+  height: 15px;
+}
+.repayment-container:hover, .Interest-only-container:hover{
+  border-color: #858a34;
+}
+
+.button{
+  background-color: #d9d931;
+  border: none;
+  width: 70%;
+  height: 45px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: .8rem;
+  gap: 5px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #e9ed94;
+}
+.button img{
+  width: 20px;
+}
+
+.result-container{
+  width: 50%;
+  height: 100%;
+  background-color: #133040;
+  border-radius: 0 15px 15px 60px;
+}
+.error-msg{
+  color: red;
+  font-size: .6rem;
+  font-weight: 600;
+  height: 10px;
+}
+.empty-result-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.empty-result-container img{
+  width: 150px;
+}
+.empty-result-container h1{
+  color: white;
+  font-size: 1.2rem;
+}
+.empty-result-container p{
+  color: #566e7a;
+  font-weight: 700;
+  font-size: .7rem;
+  padding: 15px;
+  text-align: center;
+}
+.final-result-container{
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.final-result-container h1{
+  font-size: 1.2rem;
+  color: white;
+}
+.final-result-container p{
+  font-size: .8rem;
+  color: #7a898f;
+  font-weight: 600;
+  text-align: left;
+}
+.display-container{
+  background-color: #0e2431;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  border-top: 3px solid yellow;
+}
+.display-container h3{
+  font-size: .8rem;
+  color: #7a898f;
+  font-weight: 600;
+}
+.display-container h1{
+  font-size: 2.3rem;
+  padding-bottom: 10px;
+  color: yellow;
+}
+hr{
+  height: 1px;
+  background-color: #7a898f56;
+  border: none;
+  margin-bottom: 10px;
+}
+.display-container h2{
+  font-size: 1.1rem;
+  color: white;
+}
+.active{
+  background-color: #fafae0;
+  border: 1px solid rgb(111, 111, 60);
+}
+.input-border{
+  border: 1px solid red;
+}
+
+@media(max-width: 450px){
+  body{
+    align-items: flex-start;
+    padding-top: 20px;
+    
+  }
+  main{
+    flex-direction:column;
+    width: 250px;
+    height: 100vh;
+  }
+  .calculator-container{
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px 5px 0 0;
+  }
+  .heading{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+  }
+  .heading h2{
+    font-size: .8rem;
+  }
+  .heading a{
+    font-size: .7rem;
+  }
+  .term-and-rate-container{
+    flex-direction: column;
+  }
+  .term-container{
+    width: 100%;
+  }
+  .rate-container{
+    width: 100%;
+  }
+  .mortgage-type-container{
+    width: 100%;
+  }
+  .button{
+    width: 100%;
+    height: 35px;
+  }
+  .result-container{
+    width: 100%;
+    border-radius: 0 0 5px 5px ;
+    
+  }
+}
+

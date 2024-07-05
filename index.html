@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+  <link rel="stylesheet" href="style.css">
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="calculator-container">
+      <div class="heading">
+        <h2>Mortgage Calculator</h2>
+        <a href="#" class="clear">Clear All</a>
+      </div>
+
+      <!-- Mortgage amount container -->
+      <div class="amout-container">
+        <h3>Mortgage Amount</h3>
+        <div class="amount-input-container  inputs">
+          <h2>₹</h2>
+          <input type="number" class="amout-input">
+        </div>
+        <div class="error-msg"></div>
+      </div>
+
+      <!-- Mortgage term and Interest rate container -->
+      <div class="term-and-rate-container">
+
+        <!-- Mortgage term container -->
+        <div class="term-container">
+          <h3>Mortgage Term</h3>
+          <div class="year-input-container">
+            <input type="number" class="year-input inputs">
+            <h2>years</h2>
+          </div>
+          <div class="error-msg"></div>
+        </div>
+
+        <!-- Interest rate container -->
+        <div class="rate-container">
+          <h3>Interest Rate</h3>
+          <div class="percent-input-container">
+            <input type="number" class="percent-input inputs">
+            <h2>%</h2>
+          </div>
+          <div class="error-msg"></div>
+        </div>
+      </div>
+
+      <!-- Mortgage type container -->
+      <div class="mortgage-type-container">
+        <h3>Mortgage Type</h3>
+
+        <!-- repayment container -->
+        <label>
+          <div class="repayment-container">
+            <input type="radio" name="type" class="radio" value="repayment">
+            <h1>Repayment</h1>
+          </div>
+        </label>
+
+        <!-- interest only container -->
+        <label>
+          <div class="Interest-only-container">
+            <input type="radio" name="type" class="radio" value="interestOnly">
+            <h1>Interest Only</h1>
+
+          </div>
+        </label>
+        <div class="error-msg"></div>
+      </div>
+
+      <button class="button"><img src="images/icon-calculator.svg">Calculate Repayments</button>
+
+    </div>
+
+
+    <div class="result-container">
+
+      <div class="empty-result-container">
+        <img src="images/illustration-empty.svg" alt="">
+        <h1>Results shown here</h1>
+        <p>Complete the form and click "Calculate Repayments" to see what your monthly repayment would be.</p>
+      </div>
+
+      <!-- <div class="final-result-container">
+        <h1>Your results</h1>
+        <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and
+          click "Calculate repayments" again.</p>
+        <div class="display-container">
+          <h3>Your monthly repayments</h3>
+          <h1>₹1,797.74</h1>
+          <hr>
+          <h3>Total you'll repay over the term</h3>
+          <h2>₹539,322.94</h2>
+        </div>
+      </div> -->
+
+
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
